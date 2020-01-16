@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family: 'Noto_sans';
+    font-family: 'Noto_sans', sans-serif;
     src: url('notosans-bold-webfont.eot');
     src: url('notosans-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('notosans-bold-webfont.woff2') format('woff2'),
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'Noto_sans';
+    font-family: 'Noto_sans', sans-serif;
     src: url('notosans-regular-webfont.eot');
     src: url('notosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('notosans-regular-webfont.woff2') format('woff2'),
