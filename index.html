@@ -11,24 +11,33 @@
 	<link rel="stylesheet" href="libs/Bootstrap-4-grid/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="fonts/Noto_Sans/noto_sans.css">
+	<link rel="stylesheet" href="fonts/FontAwesome/css/font-awesome.min.css">
 
 	<title>Сайт портфолио</title>
 </head>
 <body>
 	<header class = "header">
 		<nav class="navigation">
+			<div class="navigation-toggle">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
 			<ul class = "navigation-list">
+				<div class="navigation-button-close">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+
 				<li class = "navigation-list-item">
-					<a class = "navigation-list-item-link" href="#">Резюме</a>
+					<a class = "navigation-list-item-link" href="#resume">Резюме</a>
 				</li>
 				<li class = "navigation-list-item">
-					<a class = "navigation-list-item-link" href="#">Портфолио</a>
+					<a class = "navigation-list-item-link" href="#portfolio">Портфолио</a>
 				</li>
 				<li class = "navigation-list-item">
-					<a class = "navigation-list-item-link" href="#">Контакты</a>
+					<a class = "navigation-list-item-link" href="#contacts">Контакты</a>
 				</li>				
 			</ul>
 		</nav>
+
 		<div class="user-photo-block">
 			<!-- <img src="img/user-small.jpg" alt="user-photo"> -->
 			<img src="img/photo-small.jpg" alt="user-photo">
@@ -38,7 +47,7 @@
 		<h1 class = "header-title">Емельян Казаков</h1>
 		<h2 class="header-subtitle">HTML верстка сайтов и веб-интерфейсов</h2>
 		<!-- Icon-animation-mouse -->
-		<a href="#" class="mouse_scroll">
+		<a href="#resume" class="mouse_scroll">
 			<div class="mouse">
 				<div class="wheel"></div>
 			</div>
@@ -51,7 +60,7 @@
 
 	</header>
 
-	<div class="block-resume">
+	<div class="block-resume" id = "resume">
 		<div class="container">
 
 			<div class="row">
@@ -79,7 +88,7 @@
 
 	<div class="line"></div>
 
-	<div class="block-projects">
+	<div class="block-projects" id = "portfolio">
 		<div class="container">
 			<div class="block">title</div>
 			<div class="block">list-filter</div>
@@ -111,7 +120,7 @@
 	</div>
 
 
-	<div class="block-contacts">
+	<div class="block-contacts" id = "contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">

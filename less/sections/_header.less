@@ -2,12 +2,14 @@
 
 .header{
 	height: 390px;
+	// height: 100vh;
 	background-color: #8DABC7;
 	background-image: url(../img/header-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	padding-top: 55px;
+	position: relative;
 
 	@media (min-width: 768px){
 		height: 560px;
@@ -19,16 +21,39 @@
 }
 
 
+
 .navigation{
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 700;
 	color: #fff;
-	margin-bottom: 70px;
 
+	// border: 1px solid red;
+
+	@media (min-width: 768px){
+		margin-bottom: 70px;
+	}
+	
 	@media (min-width: 1200px){
 		font-size: 22px;
 		margin-bottom: 110px;
+	}
+}
+
+.navigation-toggle{
+	display: block;
+	font-size: 34px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 1;
+
+	&:hover, &:active{
+		color: #15588D;
+	}
+
+	@media (min-width: 768px){
+		display: none;
 	}
 }
 
@@ -37,16 +62,58 @@
 	padding: 0;
 	list-style-type: none;
 	text-align: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background-color: rgba(21, 88, 141, 0.9);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	// display: none;
+	transform: translate(-100%);
+	transition: all .4s ease;
+
+	&.active{
+		transform: translate(0%);
+	}
+
+	@media (min-width: 768px){
+		flex-direction: row;
+		justify-content: center;
+		display: block;
+		background-color: transparent;
+		position: static;
+		transform: translate(0%);
+	}
+}
+
+.navigation-button-close{
+	font-size: 34px;
+	position: absolute;
+	top: 18px;
+	right: 22px;
+	cursor: pointer;
+
+	@media (min-width: 768px){
+		display: none;
+	}
 }
 
 .navigation-list-item{
-	display: inline-block;
-	margin: 0;
-	margin-right: 55px;
-	padding: 0;
+	margin-bottom: 40px;
 
-	&:last-child{
-		margin-right: 0;
+	@media (min-width: 768px){
+		display: inline-block;
+		padding: 0;
+		margin: 0 55px 0 0;
+
+		&:last-child{
+			margin-right: 0;
+		}
 	}
 
 	@media (min-width: 1200px){
@@ -65,7 +132,6 @@
 }
 
 .user-photo-block{
-	// border: 1px solid red;
 	width: 110px;
 	height: 110px;
 	background-image: url(../img/avatar-placeholder-small.jpg);
