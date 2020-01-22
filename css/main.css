@@ -50,7 +50,7 @@ textarea {
 /*=============== Variables ================*/
 /*=============== Header ================*/
 .header {
-  height: 390px;
+  height: 100vh;
   background-color: #8DABC7;
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@ textarea {
   bottom: 0;
   left: 0;
   z-index: 1;
-  background-color: rgba(21, 88, 141, 0.9);
+  background-color: rgba(21, 88, 141, 0.95);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,13 +377,81 @@ a.mouse_scroll:focus {
   }
 }
 /*=============== Block-resume ==============*/
+.block-resume {
+  padding-top: 50px;
+}
 .block-resume-photo {
   display: none;
 }
 @media (min-width: 768px) {
   .block-resume-photo {
     display: block;
+    padding-top: 35px;
   }
+}
+.resume-photo-block {
+  width: 205px;
+  height: 205px;
+  background-image: url(../img/avatar-placeholder-big.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block-resume-head {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.block-resume-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #0052c2;
+  margin: 0;
+  margin-bottom: 23px;
+}
+.user-discription-text {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #010101;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.bold-text {
+  font-weight: bold;
+}
+.margin-bottom {
+  margin-bottom: 15px;
+}
+.block-resume-discription {
+  border: 1px solid red;
+  padding-top: 5px;
+}
+.block-resume-discription-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #010101;
+  margin: 0;
+  margin-bottom: 22px;
+}
+.resume-discription-item-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.167;
+  color: #0052c2;
+}
+.resume-discription-item-text {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #010101;
+  margin: 0;
 }
 /*=============== Block-projects ==============*/
 /*=============== Block-contacts ==============*/
