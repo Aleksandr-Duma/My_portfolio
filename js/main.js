@@ -25,4 +25,15 @@ $(document).ready(function(){
 			scrollTop: $(target).offset().top
 		},800);
 	});
+
+// ................Filter................
+
+	var filterItem = $('.filter-nav-item');
+
+	filterItem.on('click', function(e){
+		e.preventDefault();
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		// $(this).addClass('active').siblings().removeClass('active');
+	})
 });
