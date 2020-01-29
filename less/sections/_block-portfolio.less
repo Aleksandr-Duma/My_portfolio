@@ -11,7 +11,7 @@
 
 	@media (min-width: 1200px){
 		padding-top: 72px;
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 
 	@media (min-width: 1300px){
@@ -38,7 +38,6 @@
 }
 
 .block-filter-nav{
-	// border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -101,7 +100,6 @@
 	width: 290px;
 	padding-bottom: 25px;
 	margin-bottom: 20px;
-	// border: 1px solid blue;
 
 	@media (min-width: 768px){
 		width: 100%;
@@ -115,17 +113,22 @@
 
 .portfolio-card-img{
 	width: 100%;
-	height: auto;
-	// height: 190px;
-	// background-image: url(../img/project-placeholder.jpg);
-	// background-repeat: no-repeat;
-	// background-position: center;
-	// background-size: cover;
-	// border: 1px solid red;
+	height: 190px;
+	text-decoration: none;
+	display: block;
+	background-image: url(../img/project-placeholder.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 	padding: 0;
 	margin-bottom: 20px;
+
+	@media (min-width: 768px){
+		height: auto;
+	}
 
 	@media (min-width: 1200px){
 		height: 250px;
@@ -134,6 +137,10 @@
 			transform: translate(0%, 0%);
 		}
 	}
+}
+
+.project-img{
+	display: block;
 }
 
 .portfolio-card-overlay{
@@ -177,14 +184,14 @@
   	color: @main-text;
   	margin-bottom: 9px;
 
-  	&:hover{
-  		border-bottom: 1px dotted @main-blue;
-  		color: @main-blue;
-  	}
-
 	@media (min-width: 1200px){
 		border-bottom: 1px dotted @main-text;
 		font-size: 24px;
+
+		&:hover{
+	  		border-bottom: 1px dotted @main-blue;
+	  		color: @main-blue;
+	  	}
 	}
 }
 
