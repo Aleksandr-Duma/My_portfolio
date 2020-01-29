@@ -26,14 +26,8 @@ $(document).ready(function(){
 		},800);
 	});
 
-// ................Filter................
+// ................MixItUp2...............
 
-	var filterItem = $('.filter-nav-item');
+	$('#portfolio-wrap').mixItUp();
 
-	filterItem.on('click', function(e){
-		e.preventDefault();
-		$(this).addClass('active');
-		$(this).siblings().removeClass('active');
-		// $(this).addClass('active').siblings().removeClass('active');
-	})
 });

@@ -131,19 +131,18 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="block-portfolio" id = "portfolio">
 		<div class="container">
 			<h2 class="block-portfolio-title">Мои работы</h2> 
 			<div class="block-filter-nav">
-				<span class = "filter-nav-item active">Все</span>
-				<span class = "filter-nav-item">HTML+CSS</span>
-				<span class = "filter-nav-item">Bootstrap</span>
-				<span class = "filter-nav-item">Учебные</span>
-				<span class = "filter-nav-item">На заказ</span>
+				<span class = "filter filter-nav-item" data-filter = "all">Все</span>
+				<span class = "filter filter-nav-item" data-filter = ".html-css">HTML+CSS</span>
+				<span class = "filter filter-nav-item" data-filter = ".bootstrap">Bootstrap</span>
+				<span class = "filter filter-nav-item" data-filter = ".tutorial">Учебные</span>
+				<span class = "filter filter-nav-item" data-filter = ".order">На заказ</span>
 			</div>
-			<div class="row">
-				<div class="col-md-4 portfolio-card-wrap">
+			<div class="row" id = "portfolio-wrap">
+				<div class="mix order col-md-4 portfolio-card-wrap">
 					<div class="portfolio-card">
 						<a href="#" class="portfolio-card-img">
 							<div class="portfolio-card-overlay">
@@ -156,7 +155,7 @@
 						<p class="portfolio-card-text">Верстка одностраничного сайта по PSD макету.</p>
 					</div>
 				</div>
-				<div class="col-md-4 portfolio-card-wrap">
+				<div class="mix html-css col-md-4 portfolio-card-wrap">
 					<div class="portfolio-card">
 						<a href="#" class="portfolio-card-img">
 							<div class="portfolio-card-overlay">
@@ -169,7 +168,7 @@
 						<p class="portfolio-card-text">Верстка лендинга хостинг компании. Мобильная адаптивность.</p>
 					</div>
 				</div>
-				<div class="col-md-4 portfolio-card-wrap">
+				<div class="mix bootstrap col-md-4 portfolio-card-wrap">
 					<div class="portfolio-card">
 						<a href="#" class="portfolio-card-img">
 							<div class="portfolio-card-overlay">
@@ -182,10 +181,7 @@
 						<p class="portfolio-card-text">Верстка личного сайта портфолио на котором вы сейчас находитесь.</p>
 					</div>
 				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-4 portfolio-card-wrap">
+				<div class="mix tutorial col-md-4 portfolio-card-wrap">
 					<div class="portfolio-card">
 						<a href="#" class="portfolio-card-img">
 							<div class="portfolio-card-overlay">
@@ -198,7 +194,7 @@
 						<p class="portfolio-card-text">Верстка сайта для презентации концепта автомобиля.</p>
 					</div>
 				</div>
-				<div class="col-md-4 portfolio-card-wrap">
+				<div class="mix html-css col-md-4 portfolio-card-wrap">
 					<div class="portfolio-card">
 						<a href="#" class="portfolio-card-img">
 							<div class="portfolio-card-overlay">
@@ -211,7 +207,7 @@
 						<p class="portfolio-card-text">Верстка лендинга для компании Indian Motorcycles.</p>
 					</div>
 				</div>
-				<div class="col-md-4 portfolio-card-wrap">
+				<div class="mix order col-md-4 portfolio-card-wrap">
 					<div class="portfolio-card">
 						<a href="#" class="portfolio-card-img">
 							<div class="portfolio-card-overlay">
@@ -227,7 +223,6 @@
 			</div>
 		</div>
 	</div>
-
 
 	<div class="block-contacts" id = "contacts">
 		<div class="container">
@@ -259,6 +254,7 @@
 	</footer>
 
 	<script src = "libs/Jquery/jquery-3.3.1.min.js"></script>
+	<script src = "libs/mixItUp2/jquery.mixitup.min.js"></script>
 	<script src = "js/main.js"></script>
 </body>
 </html>

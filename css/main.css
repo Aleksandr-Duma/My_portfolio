@@ -635,6 +635,9 @@ a.mouse_scroll:focus {
     padding: 9px 28px 9px 28px;
   }
 }
+#portfolio-wrap .mix {
+  display: none;
+}
 .portfolio-card-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
