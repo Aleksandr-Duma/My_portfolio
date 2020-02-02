@@ -151,17 +151,17 @@
 	width: 100%;
 	border-radius: 8px;
 	background-color: #fff;
+	border: 3px solid #fff;
 	font-size: 16px;
 	font-weight: 700;
 	color: #00599a;
-	border: none;
 	outline: none;
-	padding: 15px 22px;
+	padding: 12px 20px;
 	margin-bottom: 10px;
+	transition: border-color .3s ease;
 
 	&:hover, &:active, &:focus{
 		border: 3px solid #a2d1f4;
-		padding: 12px 19px;
 	}
 }
 
@@ -206,17 +206,17 @@
 	height: 128px;
 	border-radius: 8px;
 	background-color: #fff;
+	border: 3px solid #fff;
 	font-size: 16px;
 	font-weight: 700;
 	color: #00599a;
-	border: none;
 	outline: none;
-	padding: 15px 22px;
+	padding: 12px 20px;
 	margin-bottom: 7px;
+	transition: border-color .3s ease;
 
 	&:hover, &:active, &:focus{
 		border: 3px solid #a2d1f4;
-		padding: 12px 19px;
 	}
 }
 
@@ -232,8 +232,27 @@
   	color: @gray-text;
 }
 
+.wrap-pencil-img{
+	position: relative;
+}
+
+@media (min-width: 1200px){
+	.wrap-pencil-img:after{
+		content: " ";
+		background-image: url(../img/pencil.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		display: block;
+		width: 203px;
+		height: 153px;
+		position: absolute;
+		top: 75%;
+		left: 55%;
+	}
+}
+
 .contact-form-submit{
-	background: transparent;
+	background-color: transparent;
 	border: 4px solid #fff;
 	border-radius: 50px;
 	font-size: 18px;
@@ -243,7 +262,21 @@
   	text-align: center;
   	color: #fff;
   	cursor: pointer;
+  	outline: none;
   	padding: 11px 48px;
+  	transition: all .3s ease;
+
+  	&:hover, &:focus{
+		background-color: #fff;
+		border: 4px solid #fff;
+		color: @bg-contacts;
+  	}
+
+  	&:active{
+  		background-color: transparent;
+		border: 4px solid #ffe400;
+		color: #ffe400;
+  	}
 
   	@media (min-width: 768px){
 		font-size: 22px;
